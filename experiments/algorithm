@@ -1,0 +1,21 @@
+MAX(parameters: a, b)
+IS a > b, THEN,
+  PRINT a
+ELSE,
+  PRINT b
+
+MIN(parameters: a, b)
+IS a < b, THEN,
+  PRINT a
+ELSE,
+  PRINT b
+
+STAR
+PRINT "Enter two numbers: "
+READ a, b
+PRINT "Enter 1 to find max, 2 to find min: "
+READ c
+IS c equal to 1, THEN,
+  max(arguments: a, b)
+ELSE,
+  min(arguments: a, b)
