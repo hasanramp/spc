@@ -1,21 +1,15 @@
-MAX(parameters: a, b)
-IS a > b, THEN,
-  PRINT a
-ELSE,
-  PRINT b
+INITIALIZE arr[] = {1, 2, 3, 4, 5}
+SET h = a[0] 
+SET l = a[0]
 
-MIN(parameters: a, b)
-IS a < b, THEN,
-  PRINT a
-ELSE,
-  PRINT b
+SET k = 4
 
-STAR
-PRINT "Enter two numbers: "
-READ a, b
-PRINT "Enter 1 to find max, 2 to find min: "
-READ c
-IS c equal to 1, THEN,
-  max(arguments: a, b)
-ELSE,
-  min(arguments: a, b)
+WHILE k > 0
+	if a[k] > h, then,
+		h = a[k]
+	if a[k] < l, then,
+		l = a[k]
+	k -= 1
+
+PRINT "smallest int: ", l
+PRINT "largest int: ", h
